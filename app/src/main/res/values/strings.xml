@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AppDoLojista</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Page Titles-->
+    <string name="sale_page_title">Venda</string>
+    <string name="score_page_title">Pontuação</string>
+    <string name="redeem_page_title">Resgaste</string>
 </resources>

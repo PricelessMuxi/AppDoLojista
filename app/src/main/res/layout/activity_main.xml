@@ -6,13 +6,48 @@
     android:layout_height="match_parent"
     tools:context="priceless.com.appdolojista.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/sub_tab_light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_lyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:tabMode="scrollable"
+                style="@style/SubTabLayout"
+                android:layout_weight="10"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_shop" />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.design.widget.CoordinatorLayout>
 
 </android.support.constraint.ConstraintLayout>
